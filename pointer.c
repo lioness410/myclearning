@@ -8,6 +8,6 @@ int main()
     ptr = &age;
     
     printf("0x%x",ptr);
-    printf("%p",*(&(*ptr)));
+    //printf("%p",*(&(*ptr)));
     return 0;
 }
