@@ -2,12 +2,22 @@
 
 int main()
 {
-    int age=18;
     int *ptr;
+    int x;
 
-    ptr = &age;
+    ptr= &x;
+    *ptr= 0;
     
-    printf("0x%x",ptr);
-    //printf("%p",*(&(*ptr)));
+    printf("x=%d\n", x);
+    printf("ptr=%d\n", *ptr);
+
+    *ptr +=5;
+    printf("x=%d\n", x);
+    printf("ptr= %d\n", *ptr);
+
+    (*ptr)++;
+    printf("x= %d\n", x);
+    printf("ptr= %d\n", *ptr);
+
     return 0;
 }
