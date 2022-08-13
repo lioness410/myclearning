@@ -2,8 +2,8 @@
 
 int main()
 {
-  int a= 16;
-  int b= 47;
+  int a= 56;
+  int b= 56;
   int c= 56;
 
   if( a>b && a>c)
