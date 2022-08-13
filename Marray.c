@@ -1,32 +1,17 @@
 #include<stdio.h>
-void storetable(int arr[][10], int n,int m, int number);
+int arr[] = {1,2,3,4,5};
 
 int main()
 {
+   // int arr[]={1,2,3,4,5};
+
+    printf("%d\n", *(arr+2));
+    printf("%d\n", *(arr+5));
+
+    return 0;
+
+}    
     
-    int tables[2][10];
-    storetable(tables, 0,10,2);
-    storetable(tables, 1,10,3);
-
-    for(int i=0; i<10; i++){
-        printf("%d\t", tables [0][i]);
-    }
-
-    printf("\n");
-    
-    for(int i=0; i<10; i++){
-        printf("%d\t", tables [1][i]);
-    }
-
-   
-       return 0;   
-}
-void storetable(int arr[][10], int n, int m, int number){
-
-    for(int i=0; i<m; i++){
-    arr[n][i] = number*(i+1);
-    }
-}
  
  
  
