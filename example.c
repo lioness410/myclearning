@@ -2,25 +2,23 @@
 
 int main()
 {
-  int a= 56;
-  int b= 56;
-  int c= 56;
+  int grosspayment,basic,da,hra,da1,hra1;
 
-  if( a>b && a>c)
-  {
-    printf("greater no.:%d",a);
-  }
-  else if(b>a && b>c)
-  {
-    printf("greater no:%d",b);
-  }
-  else if(c>a && c>b)
-  {
-    printf("greater no:%d",c);
-  }
-  else if((a==b)&&(b==c)&&(c==a))
-  {
-    printf("all are equal");
-  }
+  printf("enter basic salary:");
+  scanf("%d",&basic);
+
+  printf("enter DA:");
+  scanf("%d",&da1);
+
+  printf("enter HRA");
+  scanf("%d",&hra1);
+
+  da = (da1*basic)/100;
+  hra = (hra1*basic)/100;
+  
+  grosspayment = basic+da+hra;
+  printf("grosssalary:%d\n",grosspayment);
+  
+
     return 0;
 }
