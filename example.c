@@ -3,33 +3,43 @@
 
 int main()
 {
-  float a,b,c,fahrenheit;
-  int x;
-  printf("1.for fahrenheit to celsius\n");
-  printf("2.for celsius to fahrenheit\n");
-  printf("\n enter your choice\n:");
-  scanf("%d\n",&x);
+  int days;
 
-  switch(x)
+  printf("enter any number between(1to7):");
+  scanf("%d",&days);
+
+  switch(days)
   {
     case 1:
-    printf("enter the value of fah.tem.");
-    scanf("%f",&a);
-
-    c = (a -32)*5/9;
-    printf("%f\n",c);
+    printf("today is monday");
     break;
 
     case 2:
-    printf("enterthe valueof cel.tem.");
-    scanf("%f",&b);
+    printf("today is tuesday");
+    break;
 
-    c = (b*9/5) +32;
-    printf("%f\n",c);
+    case 3:
+    printf("today is wednesday");
+    break;
+
+    case 4:
+    printf("today is thursday");
+    break;
+
+    case 5: 
+    printf("today is friday");
+    break;
+
+    case 6:
+    printf("today is saturday");
+    break;
+
+    case 7:
+    printf("today is sunday");
     break;
 
     default:
-    printf("\n wrong choice.....try again");
+    printf("try again");
   }
   
   return 0;
