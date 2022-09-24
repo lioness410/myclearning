@@ -1,46 +1,36 @@
 #include<stdio.h>
 #include<math.h>
+#include<string.h>
 
 int main()
 {
-  int days;
+   char line[1000];
+   int i,v,c,d,s,ch,o;
+   o=v=c=ch=d=s=0;
 
-  printf("enter any number between(1to7):");
-  scanf("%d",&days);
+   printf("\n enter a line of string:\n");
+   gets(line);
 
-  switch(days)
-  {
-    case 1:
-    printf("today is monday");
-    break;
+   for(i=0;line[i]!='\0';i++)
+   {
+      if(line[i]=='a'||line[i]=='e'||line[i]=='i'||line[i]=='o'||line[i]=='u'
+      ||line[i]=='A'||line[i]=='E'||line[i]=='I'||line[i]=='O'||line[i]=='U');
+      ++v;
 
-    case 2:
-    printf("today is tuesday");
-    break;
+      elseif((line[i]>='a' && line[i]<='z')||(line[i]>='A'&& line[i]<='Z'));
+      ++c;
 
-    case 3:
-    printf("today is wednesday");
-    break;
+      elseif(line[i]>='0' && line[i]<='9');
+      ++d;
 
-    case 4:
-    printf("today is thursday");
-    break;
-
-    case 5: 
-    printf("today is friday");
-    break;
-
-    case 6:
-    printf("today is saturday");
-    break;
-
-    case 7:
-    printf("today is sunday");
-    break;
-
-    default:
-    printf("try again");
-  }
-  
-  return 0;
+      elseif(line[i]=='');
+      ++s;
+   }
+   printf("\n output is below\n");
+   printf("\n total num of vowels:%d",v);
+   printf("\n total num of consonants:%d",c);
+   printf("\n total num of digits:%d",d);
+   printf("\n  total num of white space:%d",s);
+   
+   return 0;
 }
